@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --background: #D6E5FA;
+    --primary: #24A19C;
+    --foreground: #0d0d0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    color: #00092C;
+    scroll-behavior: smooth;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--foreground);
+}
+
+p,
+li {
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+mark {
+    padding: 0 5px;
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+button {
+    background-color: var(--foreground);
+    color: var(--background);
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--primary);
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+header canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: -2;
+}
+
+header img {
+    height: 200px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header h3 {
+    margin-bottom: 15px;
+}
+
+header h3 span {
+    color: var(--primary);
+}
+
+header .arrow {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    width: 100%;
+    padding: 50px;
+}
+
+#section4 {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+section h4 {
+    margin: 35px 0 15px 0;
+}
+
+section ul,
+section ol {
+    margin: 25px;
+}
+
+section ol li {
+    margin: 15px;
+}
+
+section li h4::after {
+    content: ":";
+}
+
+section li {
+    margin: 10px 0;
+}
+
+section a {
+    display: block;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+section .link-disabled {
+    color: gray !important;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+section .link-disabled::after {
+    content: "  (closed)";
+}
+
+section .logo1 {
+    width: 100%;
+    display: block;
+    margin: 25px auto;
+}
+
+section .logo2 {
+    height: 150px;
+    display: block;
+    margin: 25px auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    text-align: right;
+    background-color: var(--primary);
+}
+
+footer p {
+    color: var(--background);
+    font-size: 0.75rem;
+}
+
+footer a {
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    section {
+        padding: 25px 10px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section p,
+    section ul,
+    section ol,
+    section li {
+        font-size: 0.85rem;
+    }
+
+    section a {
+        font-size: 0.9rem;
+    }
+
+}
