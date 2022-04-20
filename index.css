@@ -2,7 +2,7 @@
 
 :root {
      --background: #608ac5;
-    --primary: #24A19C;
+    --primary: #FAEDF0;
     --foreground: #0d0d0d;
 }
 
@@ -158,7 +158,8 @@ section .link-disabled::after {
 }
 
 section .logo1 {
-    width: 100%;
+    width: 500px;
+    height: 250px;
     display: block;
     margin: 25px auto;
 }
