@@ -24,12 +24,12 @@ stats.domElement.style.top = '0px';
 			context = canvas.getContext('2d'),
 			defaults = {
 				star: {
-					color: 'rgba(255, 255, 255, .5)',
+					color: '#005555',
 					width: 1,
 					randomWidth: true
 				},
 				line: {
-					color: 'rgba(255, 255, 255, .5)',
+					color: '#005555',
 					width: 0.2
 				},
 				position: {
