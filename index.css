@@ -2,7 +2,7 @@
 
 :root {
      --background: #F7F7F7;
-    --primary: #FFD59E;
+    --primary: #f76935;
     --foreground: #0d0d0d;
 }
 
@@ -225,4 +225,52 @@ footer a {
 
     }
 
+}
+
+.box{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 3px solid #f76935;
+    margin: 7px;
+    padding: 0px;
+    
+}
+.box p{
+    box-shadow: 0px 0px 1px 1px #f76935;
+    text-align: center;
+    padding: 0 5px;
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 3px;
+}
+
+
+.box p b{
+    color: white;font-size: 16px;
+font-size: 25px;}
+
+.box .fee{
+    margin: 15px auto;
+    margin-top: auto;
+    background-color: F7F7F7;
+}
+
+.rules{
+    
+    padding: 7px;
+}
+
+
+@media (max-width: 576px) {
+    .box{
+        display: block !important;
+    }
+} 
+
+.Title{
+    text-align: center;
+    font-size: 75px;
+    padding-bottom: 30px;
 }
